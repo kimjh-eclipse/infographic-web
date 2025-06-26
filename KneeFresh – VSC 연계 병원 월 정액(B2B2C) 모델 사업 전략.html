@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KneeFresh – VSC 연계 병원 월 정액(B2B2C) 모델 사업 전략</title>
+
+  <!-- Paperlogy 폰트 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css"
+    type="text/css"
+  />
+
+  <style>
+    /* ----------- Design Theme : Professional Blue ----------- */
+    :root {
+      --clr-primary: #0052cc;
+      --clr-bg: #f0f2f5;
+      --clr-text: #172b4d;
+      --clr-accent: #003d99;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Paperlogy", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      background: var(--clr-bg);
+      color: var(--clr-text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--clr-primary);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 980px;
+      margin: 3rem auto;
+      background: #fff;
+      padding: 2rem 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    section:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      font-size: 1.45rem;
+      color: var(--clr-primary);
+      margin-bottom: 1.25rem;
+    }
+
+    ul {
+      list-style: disc inside;
+      margin-left: 1rem;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      min-width: 540px;
+    }
+
+    th,
+    td {
+      border: 1px solid #d0d4da;
+      padding: 0.7rem 0.4rem;
+      text-align: center;
+    }
+
+    th {
+      background: var(--clr-primary);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* 카드 그리드 */
+    .grid-3 {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-top: 1rem;
+    }
+
+    .card {
+      border: 2px solid var(--clr-primary);
+      border-radius: var(--radius);
+      padding: 1.25rem 1rem;
+    }
+
+    .card h3 {
+      color: var(--clr-accent);
+      font-size: 1.05rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card p {
+      font-size: 0.87rem;
+      margin-top: 0.35rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0 3rem;
+      font-size: 0.8rem;
+      color: #6c7785;
+    }
+
+    /* Make section body list text slightly larger */
+    section ul {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- ----------- Hero ----------- -->
+  <header>
+    <h1>KneeFresh – VSC 연계 병원 월 정액(B2B2C) 모델 사업 전략</h1>
+    <p>한줄 결론 : 병원당 200 patient-weeks를 포함한 월 정액 390만 원 모델과<br />재내원 7일 무료 연장 정책으로 병원 락-인·사용자 리텐션 동시 달성</p>
+  </header>
+
+  <!-- 1. 목표 및 전제 -->
+  <section id="goals">
+    <h2>1. 목표 및 전제</h2>
+    <ul>
+      <li><strong>안정적 매출 확보:</strong> 병원 월 정액(200 patient-weeks 포함)으로 고정 MRR 창출</li>
+      <li><strong>사용자 저변 확대:</strong> 첫 내원 14일 무료 + 재내원 시 7일 연장으로 지속 이용 유도</li>
+      <li><strong>데이터 축적:</strong> 병원 기반 대규모 사용자군으로 AI 학습 가속</li>
+      <li><strong>파트너십 강화:</strong> VSC·병원 공동 브랜드 &amp; 성과 리포트 협업 강화</li>
+    </ul>
+  </section>
+
+  <!-- 2. 비즈니스 모델 구조 -->
+  <section id="biz-model">
+    <h2>2. 비즈니스 모델 구조</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>스테이크홀더</th>
+            <th>과금 방식</th>
+            <th>주요 혜택</th>
+            <th>핵심 KPI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>병원 (법인)</td>
+            <td>월 3,900,000 원<br />(200 patient-weeks 포함)</td>
+            <td>심화 대시보드·리포트<br />전담 CSM·공동 마케팅</td>
+            <td>병원 유지율<br />patient-week 활용률</td>
+          </tr>
+          <tr>
+            <td>환자</td>
+            <td>첫 14일 무료<br />재내원 시 7일 무료 연장</td>
+            <td>AI 피드백·맞춤 운동<br />치료사 상담</td>
+            <td>체험→전환율<br />재내원 빈도</td>
+          </tr>
+          <tr>
+            <td>VSC (센터)</td>
+            <td>병원 월 정액의 10 % 인센티브</td>
+            <td>프로토콜 최적화<br />치료사 교육</td>
+            <td>컨설팅 매출<br />프로그램 효과성</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 2-1. 병원 플랜 상세 -->
+  <section id="hospital-plan">
+    <h2>2-1. 병원 플랜 상세</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th>Hospital 200 Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>월 구독료</td>
+            <td>3,900,000 원</td>
+          </tr>
+          <tr>
+            <td>포함 용량</td>
+            <td>200 patient-weeks / 월</td>
+          </tr>
+          <tr>
+            <td>대시보드</td>
+            <td>심화 분석 + CSV 내보내기</td>
+          </tr>
+          <tr>
+            <td>전담 CSM</td>
+            <td>월 1회 운영 미팅</td>
+          </tr>
+          <tr>
+            <td>공동 마케팅</td>
+            <td>로고 사용 + 성공 사례 기사</td>
+          </tr>
+          <tr>
+            <td>성과 리포트</td>
+            <td>월·분기 PDF + 벤치마크 비교</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 2-2. 가격 산정 근거 -->
+  <section id="pricing-basis">
+    <h2>2-2. 가격 산정 근거 (patient-week 단가)</h2>
+    <ul>
+      <li>소비자 Premium : 49,900 원 / 4 주 → 12,475 원 / patient-week</li>
+      <li>병원 대량 할인 ≈ 5 % 적용 → <strong>12,000 원 / patient-week</strong></li>
+      <li>기본 용량 : 200 × 12,000 원 = 2,400,000 원</li>
+      <li>B2B 추가 원가(서버·CSM·상담) 1,500,000 원</li>
+      <li><strong>합계 ≈ 3,900,000 원 / 월</strong></li>
+    </ul>
+  </section>
+
+  <!-- 3. 공동 마케팅 프로그램 -->
+  <section id="marketing">
+    <h2>3. 공동 마케팅 프로그램</h2>
+    <p>공동 마케팅 패키지로 병원 브랜드 신뢰와 KneeFresh 인지도를 동시에 강화하여 환자 유입·재내원 선순환 구조 형성.</p>
+    <h3 style="margin-top:1rem;">3-1. 브랜드 자산 제공</h3>
+    <ul>
+      <li>병원 로고 + KneeFresh 공동 CI 가이드</li>
+      <li>대기실 포스터·리플렛·배너 디자인 파일 무상 제공</li>
+    </ul>
+
+    <h3 style="margin-top:1rem;">3-2. 공동 캠페인</h3>
+    <ul>
+      <li>‘무릎 건강 주간’ 온라인 이벤트 : 병원 SNS + KneeFresh 동시 게시</li>
+      <li>언론보도 : 성공 사례 기사 작성·배포(연 2회)</li>
+    </ul>
+
+    <h3 style="margin-top:1rem;">3-3. 온라인 GX 웨비나</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th>내용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>주기</td><td>매주 1회</td></tr>
+          <tr><td>대상</td><td>등록 환자 최대 20명 (동일 그룹)</td></tr>
+          <tr><td>진행</td><td>KneeFresh 전담 PT + 모더레이터</td></tr>
+          <tr><td>구성</td><td>스트레칭 5′ → 근력 20′ → Q&A 5′</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:1rem;">3-4. 성과 인포그래픽 &amp; 디지털 PR</h3>
+    <ul>
+      <li>전월 ROM·통증 개선 결과 인포그래픽 제작 → 병원 SNS 게시</li>
+      <li>KneeFresh 뉴스레터 사례 소개 → 브랜드 신뢰 확보</li>
+    </ul>
+  </section>
+
+  <!-- 3-5. 주요 경쟁 솔루션 -->
+  <section id="competitors">
+    <h2>4. 주요 경쟁 디지털 재활 SaaS</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>솔루션</th>
+            <th>제공 방식</th>
+            <th>핵심 기능</th>
+            <th>대상 시장</th>
+            <th>과금 구조 (예시)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sword Health</td>
+            <td>원격 PT 키트 (태블릿+센서)</td>
+            <td>AI 운동·화상 PT·통증 추적</td>
+            <td>미국 고용주·보험사</td>
+            <td>월 80–120 USD / 환자</td>
+          </tr>
+          <tr>
+            <td>Hinge Health</td>
+            <td>센서 + 앱</td>
+            <td>동작 분석·라이브 PT·CBT</td>
+            <td>미국 고용주·보험사</td>
+            <td>연 1,000–1,500 USD / 환자</td>
+          </tr>
+          <tr>
+            <td>Kaia Health</td>
+            <td>모바일 앱</td>
+            <td>AI 자세 교정·콘텐츠·챗 상담</td>
+            <td>유럽 보험·병원</td>
+            <td>$29.99 / 3 개월</td>
+          </tr>
+          <tr>
+            <td>Limber Health</td>
+            <td>클라우드 SaaS + EHR 연동</td>
+            <td>맞춤 프로토콜·대시보드</td>
+            <td>미국 병원</td>
+            <td>병원 월 40–60k USD</td>
+          </tr>
+          <tr>
+            <td>Curovate</td>
+            <td>모바일 앱 (B2C)</td>
+            <td>ACL·TKA 재활</td>
+            <td>소비자 직접결제</td>
+            <td>월 12.99 USD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.85rem;margin-top:0.6rem;">※ 대부분 월 7–12만 원/환자 또는 병원 월 4–6만 USD로 KneeFresh Hospital 200 Plan(3.9 백만 원/200명) 대비 50 % 이상 고가.</p>
+  </section>
+
+  <!-- 4. 프로덕트·서비스 흐름 -->
+  <section id="flow">
+    <h2>5. 프로덕트·서비스 흐름 (환자 관점)</h2>
+    <p>데이터 없음</p>
+  </section>
+
+  <!-- 5. 수익 모델 -->
+  <section id="revenue">
+    <h2>6. 수익 모델 및 경제성</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>병원 수</th>
+            <th>patient-weeks / 월</th>
+            <th>MRR</th>
+            <th>ARR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10곳</td>
+            <td>2,000</td>
+            <td>39,000,000 원</td>
+            <td>468,000,000 원</td>
+          </tr>
+          <tr>
+            <td>30곳</td>
+            <td>6,000</td>
+            <td>117,000,000 원</td>
+            <td>1,404,000,000 원</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.85rem;margin-top:0.6rem;">MRR : 월 반복 매출 · ARR : 연간 반복 매출 (MRR × 12)</p>
+  </section>
+
+  <!-- 6. 런칭 프로모션 -->
+  <section id="promo">
+    <h2>7. 런칭 프로모션 (VSC 파트너 전용)</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>순번</th>
+            <th>혜택</th>
+            <th>기간</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1–2호 VSC</td>
+            <td>3개월 무료 + 다음 3개월 70 % 할인<br />(1,170,000 원/월)</td>
+            <td>계약 후 6개월</td>
+          </tr>
+          <tr>
+            <td>3–10호 VSC</td>
+            <td>월 구독료 50 % 할인<br />(1,950,000 원)</td>
+            <td>계약 후 6개월</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.85rem;margin-top:0.6rem;">※ 프로모션 종료 30일 전 안내, 해지 없으면 정가(3.9 백만 원) 전환</p>
+  </section>
+
+  <!-- 7. 운영·마케팅 전략 -->
+  <section id="ops">
+    <h2>8. 운영·마케팅 전략</h2>
+    <ul>
+      <li><strong>병원 세일즈 키트:</strong> ROI 계산기·사례집 제공</li>
+      <li><strong>VSC 공동 캠페인:</strong> “병원-센터 협진 재활” 공동 브랜드</li>
+      <li><strong>재내원 알림:</strong> 무료 종료 3일 전·당일 병원 리마인드 문자</li>
+      <li><strong>성과 리포트:</strong> 병원·센터·KneeFresh 월간 리뷰</li>
+      <li><strong>Premium 업셀링:</strong> 무료 연장 최대 8주 도달 시 개인 결제 유도</li>
+    </ul>
+  </section>
+
+  <!-- 8. 리스크 관리 -->
+  <section id="risk">
+    <h2>9. 리스크 관리</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>리스크</th>
+            <th>대응 방안</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>무료 체험 후 이탈</td>
+            <td>AI 피드백·상담 WOW 경험 제공, 종료 알림 + 할인 오퍼</td>
+          </tr>
+          <tr>
+            <td>patient-week 초과 폭증</td>
+            <td>초과분 협상 단가(12k/주) 적용, 대시보드 실시간 경보</td>
+          </tr>
+          <tr>
+            <td>병원 예산 축소</td>
+            <td>150 patient-week 플랜(2.9 백만 원) 다운그레이드 옵션</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 10. 기대 효과 -->
+  <section id="effect">
+    <h2>10. 기대 효과</h2>
+    <ul>
+      <li><strong>월 MRR 안정화:</strong> 병원 정액 과금으로 예측 가능 매출</li>
+      <li><strong>환자 락-인:</strong> 재내원 무료 연장으로 병원 · 앱 동시 리텐션</li>
+      <li><strong>AI 정확도 상승:</strong> 대량 ROM·통증·운동 데이터 확보</li>
+      <li><strong>브랜드 신뢰:</strong> 의료기관 공식 파트너십 레퍼런스 확대</li>
+    </ul>
+  </section>
+
+  <footer>
+    작성자 : 김주현 | KneeFresh Hospital 200 Plan 비주얼 인포그래픽
+  </footer>
+
+  <script>
+    /* UI 초기화 & 해시 스크롤 */
+    document.addEventListener("DOMContentLoaded", () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const target = document.querySelector(hash);
+        if (target) target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  </script>
+</body>
+</html>

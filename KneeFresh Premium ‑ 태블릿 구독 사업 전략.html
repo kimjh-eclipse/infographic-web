@@ -108,6 +108,21 @@
     .badge-list li {
       margin-bottom: 0.35rem;
     }
+  
+    /* Make badge list text slightly larger */
+    .badge-list {
+      font-size: 1rem;
+    }
+
+    /* Make section 4 main list text slightly larger */
+    #strategy ul {
+      font-size: 1rem;
+    }
+
+    /* Make section 5 main list text slightly larger */
+    #effect ul {
+      font-size: 1rem;
+    }
 
     /* ----------- Package Cards ----------- */
     .packages {
@@ -134,6 +149,30 @@
       margin-top: 0.4rem;
     }
 
+    /* ----------- Goal Cards ----------- */
+    .goal-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* one row with three equal cards */
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .goal-card {
+      border: 2px solid var(--clr-primary);
+      border-radius: var(--radius);
+      padding: 1rem;
+      background: #fff;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    .goal-card strong {
+      display: block;
+      color: var(--clr-accent);
+      margin-bottom: 0.3rem;
+      font-size: 1rem;
+    }
+
     footer {
       text-align: center;
       padding: 2rem 0 3rem;
@@ -146,17 +185,26 @@
   <!-- ----------- Hero ----------- -->
   <header>
     <h1>KneeFresh Premium – 태블릿 구독 사업 전략</h1>
-    <p>한줄 결론 : 학습 태블릿처럼 “장비 락-인 + 장기 약정 + 인적 서비스” 구조로<br />수익성과 지속 이용률을 동시에 극대화</p>
+    <h2>한줄 결론 : 학습 태블릿처럼 “장비 락-인 + 장기 약정 + 인적 서비스” 구조로 수익성과 지속 이용률을 동시에 극대화</h2>
   </header>
 
   <!-- 1. 목표 및 전제 -->
   <section id="goals">
     <h2>1. 목표 및 전제</h2>
-    <ul>
-      <li><strong>매출 증대:</strong> Premium 구독료·태블릿 렌탈·소도구 판매로 안정적 현금 흐름 확보</li>
-      <li><strong>데이터 축적:</strong> 태블릿·앱 사용 데이터를 기반으로 AI 재활 알고리즘 고도화</li>
-      <li><strong>만성 관리 확장:</strong> 재활 종료 후 평생 관리 구독으로 자연스러운 업셀링</li>
-    </ul>
+    <div class="goal-cards">
+      <article class="goal-card">
+        <strong>매출 증대</strong>
+        Premium 구독료·태블릿 렌탈·소도구 판매로 안정적 현금 흐름 확보
+      </article>
+      <article class="goal-card">
+        <strong>데이터 축적</strong>
+        태블릿·앱 사용 데이터를 기반으로 AI 재활 알고리즘 고도화
+      </article>
+      <article class="goal-card">
+        <strong>만성 관리 확장</strong>
+        재활 종료 후 평생 관리 구독으로 자연스러운 업셀링
+      </article>
+    </div>
   </section>
 
   <!-- 2. 비교 대상 개요 -->
