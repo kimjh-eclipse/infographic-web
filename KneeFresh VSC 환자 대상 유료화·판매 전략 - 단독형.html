@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KneeFresh VSC 환자 대상 유료화·판매 전략 - 단독형</title>
+
+  <!-- Paperlogy 폰트 -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css"
+        type="text/css"/>
+
+  <style>
+    :root {
+      --primary: #0052cc;          /* Professional Blue */
+      --primary-light: #678fed;
+      --bg: #f0f2f5;               /* 배경 */
+      --text: #172b4d;             /* 텍스트 */
+      --card-bg: #ffffff;
+      --accent: #e5edff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Paperlogy", -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                   "Helvetica Neue", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+
+    header {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; line-height: 1.3; }
+
+    section {
+      width: 100%;
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--primary);
+      padding-left: .6rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+      padding: 1.25rem 1rem;
+    }
+    .card h3 { font-size: 1.15rem; margin-bottom: .5rem; color: var(--primary); }
+    .card p { font-size: .95rem; margin-bottom: .3rem; }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background: var(--card-bg);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: .75rem .6rem;
+      text-align: left;
+      border-bottom: 1px solid #dcdfe6;
+      font-size: .92rem;
+    }
+    th { background: var(--accent); color: var(--primary); }
+
+    /* Step list */
+    .steps li {
+      list-style: none;
+      position: relative;
+      padding-left: 1.6rem;
+      margin-bottom: .7rem;
+    }
+    .steps li::before {
+      content: "●";
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+      font-size: .7rem;
+      top: .25rem;
+    }
+
+    /* Bar chart */
+    .bar-chart {
+      margin-top: 1rem;
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 12px;
+    }
+    .bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: .6rem;
+    }
+    .bar span {
+      display: inline-block;
+    }
+    .bar .label {
+      min-width: 120px;
+      font-size: .9rem;
+    }
+    .bar .value {
+      flex: 1 0 auto;
+      height: 14px;
+      background: var(--primary-light);
+      border-radius: 6px;
+      margin: 0 .6rem;
+      position: relative;
+    }
+    .bar .num {
+      min-width: 80px;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #1e1f25; color: #e8eaee; }
+      section h2 { color: #8fb4ff; border-left-color: #8fb4ff; }
+      header { background: #0043a6; }
+      .card, table { background: #272933; }
+      th { background: #1f2230; color: #8fb4ff; }
+      .bar .value { background: #436ccd; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>KneeFresh VSC 환자 대상 유료화·판매 전략 - 단독형<br />
+        초기에 가치를 증명하고, 상담·개인화로 프리미엄 가치를 선명히 제시한 뒤 과금한다.</h1>
+  </header>
+
+  <!-- 1. 목표 및 전제 -->
+  <section>
+    <h2>1. 목표 및 전제</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>매출 증대</h3>
+        <p>구독료·패키지 판매로<br/>안정적 현금 흐름 확보</p>
+      </div>
+      <div class="card">
+        <h3>사용자 확보</h3>
+        <p>초기 무료 체험으로<br/>빠른 모수 확대</p>
+      </div>
+      <div class="card">
+        <h3>AI 데이터 축적</h3>
+        <p>재활 동작·통증·상담 로그를<br/>익명 수집해 알고리즘 고도화</p>
+      </div>
+      <div class="card">
+        <h3>규제 상황</h3>
+        <p>디지털 치료제 인허가 전 단계<br/>→ 웰니스 앱으로만 홍보·판매</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. 고객 세분화 -->
+  <section>
+    <h2>2. 고객 세분화</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>세그먼트</th>
+          <th>핵심 니즈</th>
+          <th>적합 모델</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>수술 후 4 개월 재활 환자</td>
+          <td>단기간 집중 회복 가시화</td>
+          <td>3–4 개월 단기 구독</td>
+        </tr>
+        <tr>
+          <td>만성 골관절염 환자</td>
+          <td>장기 관리·생활 습관화</td>
+          <td>월·연간 장기 구독</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 3. 가격·구독 모델 -->
+  <section>
+    <h2>3. 가격·구독 모델</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>무료 체험</h3>
+        <p>가입 후 2주 전 기능 오픈</p>
+      </div>
+      <div class="card">
+        <h3>Digital Care Plan</h3>
+        <p><strong>월 29,900 원</strong><br/>재활 영상 전체, 기본 AI 피드백, Push 대응, 챗봇</p>
+      </div>
+      <div class="card">
+        <h3>Digital Care Plan -4M</h3>
+        <p><strong>92,800 원/4개월</strong><br/>20% 할인, 수술 후 재활 락인</p>
+      </div>
+      <div class="card">
+        <h3>Premium Care Plan</h3>
+        <p><strong>월 49,900 원</strong><br/>Standard + 주 1회 전화 상담·리포트·전화 대응</p>
+      </div>
+      <div class="card">
+        <h3>Premium Care Plan -4M</h3>
+        <p><strong>159,680 원/4개월</strong><br/>20% 할인, 장기 관리 락인</p>
+      </div>
+      <div class="card">
+        <h3>장비 번들 패키지</h3>
+        <p>Premium 4M + 재활 소도구 키트</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 가격 책정 근거 (바 차트) -->
+  <section>
+    <h2>4. 가격 책정 근거</h2>
+    <div class="bar-chart">
+      <div class="bar">
+        <span class="label">전통 재활(월)</span>
+        <div class="value" style="width: 80%;"></div>
+        <span class="num">160k~200k원</span>
+      </div>
+      <div class="bar">
+        <span class="label">Premium Care</span>
+        <div class="value" style="width: 40%;"></div>
+        <span class="num">49.9k원</span>
+      </div>
+      <div class="bar">
+        <span class="label">Digital Care</span>
+        <div class="value" style="width: 25%;"></div>
+        <span class="num">29.9k원</span>
+      </div>
+    </div>
+    <p style="margin-top:1rem;font-size:.9rem;">
+      “한 달 내내 AI + 전문가 관리를 받는 비용이 병원 1회 방문 비용보다 저렴합니다.”</p>
+  </section>
+
+  <!-- 5. 기능별 무료·유료 -->
+  <section>
+    <h2>5. 기능별 무료·유료&nbsp;구획</h2>
+    <table>
+      <thead>
+        <tr><th>기능</th><th>무료 체험 (2주)</th><th>구독</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>재활 운동 영상</td><td>전체 오픈</td><td>전체&plus;심화 라이브러리</td></tr>
+        <tr><td>AI 피드백</td><td>실시간 교정, 최근 7일</td><td>개인화 코칭, 장기 추세</td></tr>
+        <tr><td>상담 기능</td><td>무제한</td><td>구독 시 재개</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 6. 유입·판매 전략 -->
+  <section>
+    <h2>6. 유입·판매 전략</h2>
+    <ul class="steps">
+      <li><strong>1단계 – VSC 치료사 채널:</strong> QR 무료 이용권, 수익 공유 리베이트</li>
+      <li><strong>2단계 – 레퍼럴/지인 추천:</strong> 추천 시 무료 기간 2주 연장, 성공 사례 영상 제작</li>
+      <li><strong>3단계 – 대중 마케팅:</strong> 네이버 카페·유튜브·SNS 인포그래픽, PR 기사</li>
+    </ul>
+  </section>
+
+  <!-- 7. 사용자 유지·데이터 활용 -->
+  <section>
+    <h2>7. 사용자 유지 & 데이터 활용</h2>
+    <ul class="steps">
+      <li>맞춤 푸시 시스템으로 운동 지속 유도</li>
+      <li>커뮤니티 피드로 응원·정보 공유</li>
+      <li>이탈 분석 &amp; A/B 테스트로 가격·UX 최적화</li>
+      <li>데이터 투명성 확보 및 주기적 기능 업데이트</li>
+    </ul>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      /* UI 초기화 로직 (확장 가능) */
+    });
+  </script>
+</body>
+</html>
