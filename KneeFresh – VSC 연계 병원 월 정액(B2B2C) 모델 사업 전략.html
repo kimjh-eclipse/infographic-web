@@ -3,6 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default',
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true
+      }
+    });
+  </script>
+  <style>
+    .mermaid {
+      width: 100%;
+      max-width: 100%;
+      margin: 1rem 0;
+    }
+  </style>
   <title>KneeFresh – VSC 연계 병원 월 정액(B2B2C) 모델 사업 전략</title>
 
   <!-- Paperlogy 폰트 -->
@@ -349,7 +367,15 @@
   <!-- 4. 프로덕트·서비스 흐름 -->
   <section id="flow">
     <h2>5. 프로덕트·서비스 흐름 (환자 관점)</h2>
-    <img src="프로덕트_서비스_흐름.png" alt="프로덕트·서비스 흐름 (환자 관점)" style="max-width:100%; height:auto; margin-top:1rem;" />
+    <div class="mermaid">
+      flowchart LR
+      A[병원 내원·진단] --> B[앱 QR 등록<br>14일 무료 시작]
+      B --> C[무료 체험 진행]
+      C --> D{재내원 여부}
+      D -- 예 --> E[무료 7일 연장]
+      E --> C
+      D -- 아니오 --> F[Premium 전환 또는 병원 연장]
+    </div>
   </section>
 
   <!-- 5. 수익 모델 -->
